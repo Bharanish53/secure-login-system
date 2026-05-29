@@ -20,10 +20,11 @@ app.use(
 app.use(express.static("public"));
 
 const db = mysql.createConnection({
-  host: "localhost",
-  user: "root",
-  password: "",
-  database: "secure_login",
+  host: "MYSQLHOST value",
+  user: "MYSQLUSER value",
+  password: "MYSQLPASSWORD value",
+  database: "MYSQLDATABASE value",
+  port: MYSQLPORT value
 });
 
 db.connect((err) => {
