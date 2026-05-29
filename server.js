@@ -20,10 +20,10 @@ app.use(
 app.use(express.static("public"));
 
 const db = mysql.createConnection({
-  host: mysql.railway.internal,
-  user: root,
-  password: ODSSQOjkpdFRdPFSdLemiraSloVzwkVA,
-  database: railway,
+  host: "mysql.railway.internal",
+  user: "root",
+  password: "ODSSQOjkpdFRdPFSdLemiraSloVzwkVA",
+  database: "railway",
   port: 3306
 });
 
